@@ -1,0 +1,16 @@
+body{
+	color: #008888;
+	background-image: url("../images/a.jpg");
+	background-repeat: repeat;
+}
+
+.title{
+	text-align: center;
+}
+
+.content-paragraph-first{
+	font-style: italic;
+	font-weight: bold;
+	background-color: #339999;
+	color: #FFFFFF;
+}

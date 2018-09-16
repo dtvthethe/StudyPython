@@ -1,0 +1,41 @@
+.text-center{
+	text-align: center;
+}
+.text-bold{
+	font-weight: bold;
+}
+
+.page-title{
+	color: #FF0067;
+}
+.category-title{
+	background-color: #FF0067;
+	color: #FFFFFF;
+	font-weight: bold;
+	width: 119px;
+	margin: 0px;
+	margin-left: 32px;
+}
+.introduce{
+	list-style-type: square;
+}
+.contact{
+	list-style-type: circle;
+}
+.copyright{
+	color: #2C123E;
+	background-color: #FAEBFC;
+	margin-top: 30px;
+}
+.subcategory-title{
+	margin-left: 42px;
+}
+.subcategory-title li{
+}
+
+ol > li{
+	margin-left: 100px;
+}
+.line{
+	margin: 20px 0px;
+}

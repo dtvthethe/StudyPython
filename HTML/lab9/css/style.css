@@ -1,0 +1,22 @@
+.text-center{
+	text-align: center;
+}
+.page-title{
+	color: #CC0033;
+}
+
+body{
+	font-family: "Tahoma"; 
+	font-size: 12px;
+}
+
+.table-courses{
+	border-collapse: collapse;
+}
+.table-courses .table-courses-header{
+	background-color: #CC0033;
+	color: #FFFFFF;
+}
+.table-menu, th, td {
+    border: 1px solid #CC0033;
+}

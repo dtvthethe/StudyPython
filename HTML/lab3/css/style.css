@@ -1,0 +1,14 @@
+body{
+	font-family: arial;
+	color: #FFFFFF;
+	background-color: #A06D21;
+	background-image: url("../images/a.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.title{
+	color: #FFCC00;
+	text-align: center;
+}

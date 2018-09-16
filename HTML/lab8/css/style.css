@@ -1,0 +1,34 @@
+.text-center{
+	text-align: center;
+}
+.page-title{
+	color: #D06303;
+}
+
+body{
+	background-color: #FFEDCA;
+}
+.image{
+	width: 208px;
+	height: 281px;
+}
+.table-menu{
+    border-collapse: collapse;
+}
+.table-menu tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+.table-menu .table-menu-header{
+	background-color: #C96704;
+	color: #FFFFFF;
+}
+.table-menu .table-menu-header th:first-child, .table-menu tr td:first-child{
+	width: 50px;
+	text-align: center;
+}
+.table-menu .table-menu-header th:last-child{
+	width: 300px;
+}
+.table-menu, th, td {
+    border: 1px solid #502635;
+}
