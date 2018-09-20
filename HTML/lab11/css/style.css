@@ -1,0 +1,29 @@
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-bold{
+	font-weight: bold;
+}
+.page-title{
+	color: #FE6601;
+}
+.content-paragraph-2{
+	background-color: #FE6601;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+.content-paragraph-1 > span, .content-paragraph-3::first-letter{
+	text-transform: uppercase;
+	color: #9D0105;
+	font-size: 70px;
+	font-weight: bold;
+}
+.highlight{
+	background-color: #F7CF01;
+}

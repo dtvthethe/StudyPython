@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển trên form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h2 class="page-title">Đăng Nhập</h2>
+	<form id="frm-login">
+		<table>
+			<tr>
+				<td>Mã người dùng:</td>
+				<td>
+					<input type="text" id="txt-username">
+				</td>
+			</tr>
+			<tr>
+				<td>Mật khẩu:</td>
+				<td>
+					<input type="password">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" id="btn-login" value="Đồng ý" onclick="onClickLogin()">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="lb-user"></div>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		function onClickLogin() { 
+		    document.getElementById("lb-user").innerHTML = document.getElementById("txt-username").value;
+		}
+	</script>
+</body>
+</html>
