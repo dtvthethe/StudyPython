@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+</head>
+<body>
+	<h2>Menu</h2>
+	<ul id="list">
+	</ul>
+	<ul id="list-other">
+		<li>
+			<a href="lab16/index.html">Lab 16</a>
+		</li>
+		<li>
+			<a href="Resume/index.html">Resume/CV</a>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		let lst = "";
+		for (var i = 1; i <= 11; i++) {
+			lst += '<li><a href="lab'+i+'/index.html">Lab '+i+'</a></li>';
+		}
+		document.getElementById("list").innerHTML = lst;
+	</script>
+</body>
+</html>

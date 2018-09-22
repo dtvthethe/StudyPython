@@ -1,4 +1,5 @@
 .advertise{
+	border-collapse: collapse;
 }
 .banner-top{
 	font-size: 20px;
@@ -8,6 +9,7 @@
 }
 .product-image{
 
+	width: 10px;
 }
 
 .banner-middle{

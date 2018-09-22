@@ -1,0 +1,87 @@
+/*@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+*/
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+h1, h3, p{
+	margin: 0px;
+	float: left;
+}
+.title-block{
+	font-size: 37px;
+	font-weight: normal;
+}
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid #12a113;
+}
+.header{
+	display: table;
+	width: 100%;
+}
+
+.header .title{display: grid;}
+.header .title p{color: white;padding-top: 50px;padding-left: 20px;padding-bottom: 20px;background-color: #12a113;width: 40%;}
+.header .name{display: grid;padding: 32px 87px;}
+.header .name h1{color: #9DA3A7;font-weight: normal;font-size: 50px;}
+.header .name i{color: #9DA3A7;font-size: 20px;}
+
+
+
+.body{
+	
+	display: table;
+}
+.left-panel{
+	width: 30%;
+	background-color: #12a113;
+	color: white;
+	padding: 18px;
+	height: 100%;
+	display: table-cell;
+	vertical-align: top;
+}
+.left-panel .avatar{width: 100%;}
+.left-panel h3{margin-top: 23px;font-weight: normal;width: 100%;}
+.left-panel strong{margin-top: 20px;margin-bottom: 5px;display: block;}
+.left-panel i{}
+.left-panel ul{margin: 0px;margin-top: 10px;padding-left: 22px;display: table-cell;list-style: none;}
+.left-panel li{line-height: 30px;padding-left: 22px;background-image: url("../images/star.png");background-repeat: no-repeat;background-position-y: center;}
+.right-panel{
+	display: table-cell;
+	padding: 0px 20px;
+}
+
+.right-panel .row{}
+.right-panel .row .row-title{
+	color: #9DA3A7;
+	float: left;
+	margin-bottom: 19px;
+	width: 100%;
+}
+.table-edu{float: left;}
+.table-edu .table-time{width: 112px;vertical-align: top;font-weight: bold;}
+.table-edu .table-content{}
+.table-edu .table-content .name-company{
+	color: #9DA3A7;
+}
+.table-edu .table-content .position{
+	color: #9DA3A7;
+	font-style: italic;
+	margin: 3px 0px;
+}
+.table-edu .table-content .description{font-style: italic;margin-bottom: 19px;font-size: 13px;}
+
+.table-skill{margin-bottom: 20px;margin-left: 46px;}
+
+.table-skill .name-skill{
+	font-weight: bold;
+	width: 149px;
+	font-size: 15px;
+}
+.table-skill .progressbar{width: 189px;background-color: #9DA3A7;height: 11px;}
+.table-skill .progressbar .progressing{height: 100%;background: #12a113;}
