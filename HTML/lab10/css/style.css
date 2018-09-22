@@ -1,0 +1,25 @@
+.advertise{
+}
+.banner-top{
+	font-size: 20px;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.product-image{
+
+}
+
+.banner-middle{
+	background-color: #FFBBBB;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 28px;
+}
+.content{}
+.content .item-title{
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 18px;
+	background-image: url("images/list-icon.png");
+}

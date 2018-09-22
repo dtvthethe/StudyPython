@@ -1,0 +1,22 @@
+display:
+	+ none
+	+ block
+	+ inline
+
+set center:
+	+ width : x
+	+ margin: 0 auto;
+
+box-sizing & borderbox
+
+position: 
+	+ relative & + absolubte: div ben ngoai là relative div ben trong là absolubte: div absolubte sẽ ko chạy ra ngoài nữa
+	+ fixed
+
+float:
+	+ clear: both => ko bị ảnh hưởng bởi phẩn trên do set float
+
+animation & transition: hiệu ứng 
+	transition: 2s width => set width tăng lên trong vòng 2s
+	animation: tao hieu ung ko dung js hay flash.  chủ yếu kết hợp vs js: vd chạy ngang qua r mất đi
+google key: "scss/sass slider"

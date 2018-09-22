@@ -12,11 +12,27 @@ body{
 
 .table-courses{
 	border-collapse: collapse;
+	border: 1px solid #CC3300;
+}
+.table-courses td{
+	border: 1px solid;
+	border-color: #CC3300;
 }
 .table-courses .table-courses-header{
+
+}
+.table-courses .table-courses-header td{
 	background-color: #CC0033;
 	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+	border-right: 1px solid #FFFFFF;
 }
-.table-menu, th, td {
-    border: 1px solid #CC0033;
+
+.table-courses .table-courses-header td:last-child{
+	border-color: #CC3300;
+}
+
+.table-courses .table-courses-header:first-child td:last-child{
+	border-bottom-color: #FFFFFF;
 }

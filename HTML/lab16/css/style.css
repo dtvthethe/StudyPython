@@ -1,0 +1,107 @@
+body{}
+h2, h3, h4{
+	margin: 0px;
+	float: left;
+}
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+.header{
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	float: left;
+	border: 1px solid #0b0b0ccc;
+}
+.header h2{
+	float: left;
+	color: #006599;
+	font-size: 59px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.header img{
+	float: right;
+}
+.body{
+	float: left;
+	width: 100%;
+	border: 1px solid #0b0b0ccc;
+}
+.left-panel{
+	float: left;
+	width: 25%;
+}
+.menu{
+	list-style: circle;
+	margin: 10px -5px;
+}
+.menu li{
+	margin: 10px 0px;
+}
+.menu li a{}
+.right-panel{
+	border-left: 1px solid #0b0b0ccc;
+	float: right;
+	width: 74%;
+}
+.block{}
+.title-category{
+	background-color: #006599;
+	color: #ffffff;
+	padding: 3px 0px;
+	width: 100%;
+}
+.news-item{
+	float: left;
+	border-bottom: 1px solid #000000;
+	width: 100%;
+}
+.news-item-remove-border-bottom{
+	border-bottom: none;
+}
+.news-item h4{}
+.news-item h4 a{
+	text-decoration: none;
+    color: #22558C;
+}
+.news-content{
+	padding: 3px;
+	float: left;
+	width: 99%;
+}
+.news-content .news-item-list{
+	margin: 27px 0px;
+}
+.news-content .news-image{
+	float: left;
+	width: 30%;
+}
+.news-content p{
+	float: right;
+	width: 69%;
+	margin: 0px;
+	padding-left: 2px;
+}
+.back-to-top{
+	background-color: #a5a1a1;
+	float: right;
+	margin: 2px 3px;
+}
+
+.news-content .food-item-list{
+	margin: 0px;
+	float: left;
+	list-style: square;
+}
+.news-content .food-image, .news-content .music-image{
+	float: right;
+	width: 185px;
+}
+
+.news-content .music-item-list{
+	margin: 0px;
+	float: left;
+	list-style: circle;
+}
