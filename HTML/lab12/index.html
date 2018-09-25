@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h2 class="page-title">Phiếu đăng ký tham gia trương trình khuyến mãi</h2>
+	<form id="frm-register">
+		<table>
+			<tr>
+				<td>Họ và Tên</td>
+				<td>
+					<input type="text" id="txt-full-name" size="40">
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td>
+					<input type="text" id="txt-address" size="30">
+				</td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td>
+					<input type="text" id="txt-phone-number" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td>Phái</td>
+				<td>
+					<input type="radio" name="rbGender" value="true" checked="checked"> Nam
+					<input type="radio" name="rbGender" value="false"> Nữ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề nghiệp</td>
+				<td>
+					<select id="sel-job">
+						<option value="1">Bác sĩ</option>
+						<option value="2">Kỹ sư</option>
+						<option value="3">Giáo viên</option>
+						<option value="4">Khác</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn sản phẩm tham gia</td>
+				<td>
+					<select id="sel-product" size="4" multiple="multiple">
+						<option value="1">Kem đánh răng</option>
+						<option value="2">Bột giặt</option>
+						<option value="3">Dầu gội đầu</option>
+						<option value="4">Sữa tắm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Số người dự đoán tham gia</td>
+				<td>
+					<input type="number" step="1" min="1" max="9999999" value="1">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" name="btnSubmit" value="Đồng ý" onclick="onClickSubmit()">
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="lb-result"></div>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		function onClickSubmit() { 
+		    document.getElementById("lb-result").innerHTML = "Bạn đã đăng ký thành công!!!";
+		}
+	</script>
+</body>
+</html>

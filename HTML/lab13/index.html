@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo form và các điều khiển</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h2 class="page-title">Đăng ký du lịch</h2>
+	<form id="frm-register">
+		<table>
+			<tr>
+				<td>Họ và Tên</td>
+				<td>
+					<input type="text" id="txt-full-name" size="40">
+				</td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td>
+					<input type="text" id="txt-address" size="30">
+				</td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td>
+					<input type="text" id="txt-phone-number" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td>
+					<input type="checkbox" id="chk-VN-tourists" checked="checked">
+				</td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select id="sl-tour">
+						<optgroup label="Miền Bắc">
+							<option value="1">Hà Nội - Hạ Long -Sapa</option>
+							<option value="2">Hà Nội - Hạ Long -Sapa</option>
+							<option value="3">Hà Nội - Hạ Long -Sapa</option>
+						</optgroup>
+						<optgroup label="Miền Trung">
+							<option value="4">Hà Nội - Hạ Long -Sapa</option>
+							<option value="5">Hà Nội - Hạ Long -Sapa</option>
+							<option value="6">Hà Nội - Hạ Long -Sapa</option>
+						</optgroup>
+						<optgroup label="Miền Nam">
+							<option value="8">Hà Nội - Hạ Long -Sapa</option>
+							<option value="9">Hà Nội - Hạ Long -Sapa</option>
+							<option value="10">Hà Nội - Hạ Long -Sapa</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td>
+					<input type="radio" name="rbVehical" value="true"> Máy bay
+					<input type="radio" name="rbVehical" value="false" checked="checked"> Xe ô tô
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset style="border: 1px solid red; width: 350px; height: 55px">
+						<legend style="font-style: italic; color: red">Số lượng đoàn khách</legend>
+						Người lớn <input type="number" min="1" max="99999" id="num-person">
+						Trẻ em <input type="number" min="0" max="99999" id="num-child">
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td>
+					<textarea style="width: 300px" id="text-note"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" name="btnSubmit" value="Đồng ý" onclick="onClickSubmit()">
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="lb-result"></div>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		function onClickSubmit() { 
+		    document.getElementById("lb-result").innerHTML = "Bạn đã đăng ký thành công!!!";
+		}
+	</script>
+</body>
+</html>
