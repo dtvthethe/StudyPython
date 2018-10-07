@@ -1,0 +1,89 @@
+body{
+	font-family: "Arial";
+}
+
+.wrapper{
+    width: 900px;
+    margin: 0px auto;
+    border: 1px solid red;
+    background-color: red;
+}
+.form-register{display: table;background: red;}
+.left-panel{
+    width: 30%;
+    display: table-cell;
+    background-color: white;
+    padding: 13px 27px;
+}
+.left-panel .title{
+    /* font-weight: normal; */
+    color: #444444;
+    font-size: 30px;
+    padding: 0px;
+    margin: 8px 0px;
+}
+.left-panel .description{
+    color: #787878;
+}
+.left-panel img{}
+.right-panel{
+    width: 70%;
+    display: table-cell;
+    background-color: white;
+    padding: 13px;
+}
+.input-100-percent{
+	width: 100%;
+}
+.input-text{
+	padding: 8px 5px;
+    border-radius: 3px;
+    border: 1px solid #C8C8C8;
+}
+.input-button{
+	padding: 8px 5px;
+    border-radius: 3px;
+    border: 1px solid #C8C8C8;
+    background-color: #FDD835;
+}
+.right-panel .tab-bar{
+    border-bottom: 1px solid #787878;
+}
+.right-panel .frm-register-content{
+	font-size: 13px;
+	color: #333333;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+.row .label{
+    width: 13%;
+    /* display: table-column; */
+}
+.row .control{
+    /* display: table-column; */
+    width: 87%;
+}
+
+
+
+.right-panel .tab-bar ul{
+    display: inherit;
+    list-style: none;
+    padding: 0px;
+}
+.right-panel .tab-bar ul li{}
+.right-panel .tab-bar ul li a{
+    text-decoration: none;
+    padding: 7px 23px;
+    color: #1BA8FF;
+}
+.right-panel .tab-bar ul li .active{
+    border-bottom: 3px solid #1BA8FF;
+}
+.right-panel .tab-bar ul li a:hover{
+    border-bottom: 3px solid #1BA8FF;
+}
+.right-panel .tab-content-bar{}
