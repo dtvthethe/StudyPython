@@ -145,7 +145,7 @@ def on_btn_remove_click():
     treeview_focus = treeview.focus()
     if (treeview_focus != ''):
         index_row_selected = treeview.index(treeview_focus)
-        del lst_user[index_row_selected]
+        lst_user.pop(index_row_selected)
         show_data_on_tree()
         on_btn_reset_click()
 
@@ -206,8 +206,6 @@ Button(frame_control_button, text='Remove', command = on_btn_remove_click).pack(
 Button(frame_control_button, text='Reset', command=on_btn_reset_click).pack(side=LEFT, padx=10, pady =5)
 
 #TreeView => loop for i?
-
-
 treeview = ttk.Treeview(frame_list)
 treeview.pack(fill=BOTH, padx=5, pady=5)
 treeview['columns'] = ['col_id', 'col_name', 'col_gender', 'col_national']

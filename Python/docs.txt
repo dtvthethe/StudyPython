@@ -1,0 +1,63 @@
+* comment:
+	#: 1 line
+	""" xxx 
+	bb
+	""" : > 1 line
+
+* IF: don't need ( ) symbols
+* VARIABLE: diffentce between lower case and upper case
+* OPERATOR:
+	// : chi lay phan nguyen: vd: 3.444 = 3
+
+* tu khoa:
+	as 
+	assert
+	exec
+	finally
+	global: khai bao 1 bien toan cuc
+	lambda
+	with
+	yield 
+	^
+	@: khai bao pham vi
+
+* khai bao:
+	a, b, c = 1, 2, 3 -> khai bao 1 dong
+
+* DATA TYPE:
+	str: """""" -> có phân biệt \n
+		"%s %s" % (x, y) -> thay thế x y vào chuỗi bằng ký tự %
+		%.2f: vd 1.23456 => 1.23
+
+		str[:-1]: -> -1 có thể hiểu là python đã lấy len-1 vd: "123" : len = 3 -1 = 2 => index 2
+
+	None -> null
+	Tuple
+	List: có thể chứa nhiều lại data type []
+		+ [0] * 10 : có 10 phần tử
+		+ [1, "a", "b"] * 2 = [1, 'a', 'b', 1, 'a', 'b']
+		+ * cho 0 là rổng []
+		+ list1.extend(list2) : nối 2 list thành 1
+		+ extend khác append: append + vào cuối mảng, extend lấy những items của list này vào list khác
+		+ sort
+		+ pop
+		+ count(x): đến số lần xuất hiện trong mảng
+		+ remove(x): nếu trong list x xuất hiện N lần thì sẽ xóa x ở đầu tiên. Xóa hết thì loop
+		+ reverse: đảo ngc mảng -> ít dùng vd: [1, "a", 4, "b", 3] => [3, 'b', 4, 'a', 1]
+		
+	Set
+	Dict
+	check a variable type: type(varrr)
+
+	Number:
+		+ int : số nguyên
+		+ float: dấu phẩy(số thực)
+		+ complex: số phức
+
+* CONVERT DATA TYPE
+	bool(xx): convert to bool
+	str(xxx): convert to string
+	
+*RANDOM:
+	+ random.shuffle
+	+ random.seed(x): đảo list x lần
