@@ -13,8 +13,3 @@ arr.sort(reverse=False)
 #OUTPUT
 print(arr)
 print(type(arr))
-
-
-a = Ơ}
-
-

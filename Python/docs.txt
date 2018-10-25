@@ -25,6 +25,8 @@
 	a, b, c = 1, 2, 3 -> khai bao 1 dong
 
 * DATA TYPE:
+	List [], Tuple (), Set {}, Dic {k,v}
+
 	str: """""" -> có phân biệt \n
 		"%s %s" % (x, y) -> thay thế x y vào chuỗi bằng ký tự %
 		%.2f: vd 1.23456 => 1.23
@@ -32,7 +34,6 @@
 		str[:-1]: -> -1 có thể hiểu là python đã lấy len-1 vd: "123" : len = 3 -1 = 2 => index 2
 
 	None -> null
-	Tuple
 	List: có thể chứa nhiều lại data type []
 		+ [0] * 10 : có 10 phần tử
 		+ [1, "a", "b"] * 2 = [1, 'a', 'b', 1, 'a', 'b']
@@ -44,9 +45,17 @@
 		+ count(x): đến số lần xuất hiện trong mảng
 		+ remove(x): nếu trong list x xuất hiện N lần thì sẽ xóa x ở đầu tiên. Xóa hết thì loop
 		+ reverse: đảo ngc mảng -> ít dùng vd: [1, "a", 4, "b", 3] => [3, 'b', 4, 'a', 1]
-		
-	Set
+	Tuple: ko cho phep thay doi du lieu
+		+ ()
+	Set: cac phan tu lap lai bi combine
+		+ {}
+		+ & : các phần từ trùng nhau theo B
+		+ |: hợp 2 A & B loại bỏ trùng nhau
+		+ - : loai bỏ trùng nhau theo B
+		+ 6: các phần tử khác nhau giữa A B
 	Dict
+		+ {k:v} 
+		+ for k, v in dic
 	check a variable type: type(varrr)
 
 	Number:
@@ -58,6 +67,19 @@
 	bool(xx): convert to bool
 	str(xxx): convert to string
 	
+* FUnctio return  multiple variable:
+	def func_a([xxx]):
+		return v1, v2
+	X1, X2 = func_a(xxx)
+
+* path file
+../ thu muc cha
+
+*PIP
+	pip uninstall xxx
+
 *RANDOM:
 	+ random.shuffle
 	+ random.seed(x): đảo list x lần
+????? lambda
+????? 

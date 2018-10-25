@@ -1,0 +1,4 @@
+Collecting xlrd
+  Downloading https://files.pythonhosted.org/packages/07/e6/e95c4eec6221bfd8528bcc4ea252a850bffcc4be88ebc367e23a1a84b0bb/xlrd-1.1.0-py2.py3-none-any.whl (108kB)
+Installing collected packages: xlrd
+Successfully installed xlrd-1.1.0

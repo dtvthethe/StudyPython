@@ -13,7 +13,7 @@ input = '[12, 25, 38, 18, 16]'
 #PROCESS
 arr = []
 #Step 1: Remove space and [ ] symbols
-str_tmp = input.replace(' ','').replace('[','').replace(']','')
+str_tmp = input[1 : len(input)-2].replace(' ','').replace('[','').replace(']','')
 #Step 2: Split by , symbols => array type str
 arr_split = str_tmp.split(',')
 #Step 3: Convert each item from string type to integer type

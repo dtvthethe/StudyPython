@@ -1,14 +1,8 @@
-#INPUT
-arr = [12, 25, 38, 18, 16]
+a = 0
+b = False
 
-for about in range(len(arr)-1,0,-1):
-    for inn in range(about):
-        if arr[inn] > arr[inn+1]:
-            tmp = arr[inn]
-            arr[inn] = arr[inn+1]
-            arr[inn+1] = tmp
-
-for about in range(len(arr)-1,0,-1):
-    print('about ', about)
-    for i in range(about):
-        print('i = ', i)
+while a < 10 and b == False:
+	# if a == 3:
+	# 	b = True
+	print(a)
+	a += 1

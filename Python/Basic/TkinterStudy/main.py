@@ -1,5 +1,7 @@
 from tkinter import *
 from tkinter import ttk, LEFT, TOP, BOTH, CENTER
+# from constant import TkinterStudy.con
+#import  TkinterStudy.constant
 from constant import *
 
 #=> ????  import a file
@@ -61,9 +63,9 @@ lst_user = [User('PD347', 'Adam Parker', 1, 1),
     User('PD987', 'Oliver Kahn', 0, 3),
     User('PD674', 'Harper Cikarang', 0, 2)]
 
-lst_country = [Country(1, 'America', 'a.png'),
+tuple_country = (Country(1, 'America', 'a.png'),
               Country(2, 'Canada', 'b.png'),
-             Country(3, 'Australia', 'c.png')]
+             Country(3, 'Australia', 'c.png'))
 
 def change_flag(name_file):
     image_flag = PhotoImage(file= 'images/' + name_file)
@@ -74,7 +76,7 @@ def change_flag(name_file):
 #Methods: => variable region image_flag ???
 def on_cmb_national_selected(event):
     index_selected = cmb_national.current()
-    change_flag(lst_country[index_selected].image_path)
+    change_flag(tuple_country[index_selected].image_path)
 
 def on_btn_reset_click():
     entry_id.delete(0, END)
@@ -86,21 +88,21 @@ def on_btn_reset_click():
 
 #?? LINQ select
 def get_name_country_by_id(id):
-    for item in lst_country:
+    for item in tuple_country:
         if(item.id == id):
             return item.name
     return 'N/A'
 
 def get_id_country_by_name(name):
-    for item in lst_country:
+    for item in tuple_country:
         if(item.name == name):
             return item.id
     return -1
 
 def get_index_country_by_id(id):
     index = 0
-    while(index < len(lst_country)):
-        if(lst_country[index].id == id):
+    while(index < len(tuple_country)):
+        if(tuple_country[index].id == id):
             return index
         index = index + 1
     return -1
@@ -116,7 +118,7 @@ def on_btn_add_click():
     txt_id = entry_id.get()
     txt_name = entry_name.get()
     bl_gender = rd_gender.get()
-    lst_user.append(User(txt_id, txt_name,bl_gender, lst_country[cmb_national.current()].id))
+    lst_user.append(User(txt_id, txt_name,bl_gender, tuple_country[cmb_national.current()].id))
     show_data_on_tree()
 
 def show_data_on_tree():
@@ -136,7 +138,7 @@ def tree_selected_item(event):
     entry_name.insert(0, user.name)
     rd_gender.set(user.gender)
     cmb_national.current(get_index_country_by_id(user.country_id))
-    change_flag(lst_country[get_index_country_by_id(user.country_id)].image_path)
+    change_flag(tuple_country[get_index_country_by_id(user.country_id)].image_path)
 
 def on_btn_remove_click():
     if (not validate_id_name()):
@@ -159,7 +161,7 @@ def on_btn_update_click():
         txt_id = entry_id.get()
         txt_name = entry_name.get()
         bl_gender = rd_gender.get()
-        lst_user[index_row_selected] = User(txt_id, txt_name, bl_gender, lst_country[cmb_national.current()].id)
+        lst_user[index_row_selected] = User(txt_id, txt_name, bl_gender, tuple_country[cmb_national.current()].id)
         show_data_on_tree()
 
 #Title:
@@ -186,7 +188,7 @@ rd_male.pack(side=LEFT)
 
 #Combobox National:
 arr_cmb = []
-for item in lst_country:
+for item in tuple_country:
     arr_cmb.append(item.name)
 
 Label(frame_control_national, text='National:', width=LABEL_WIDTH, compound='left').pack(side=LEFT)
