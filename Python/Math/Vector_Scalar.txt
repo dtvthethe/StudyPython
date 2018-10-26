@@ -1,0 +1,18 @@
+2 vector bang nhau khi:
+	+ a cùng phương vs b: phải cùng phương -> cùng hướng
+	+ |a| = |b| (độ lớn): độ dài vector -> cùng độ dài
+
+Pitago:
+	cạnh huyền = SQRT(AB**2 + CD**2)
+
+Độ dài đoạn thẳng từ 2 điểm A(x,y) B(x, y):
+	|AB| = SQRT( (Bx - Ax)**2   +   (By - Ay)**2   )
+
+vector a(5, -3):
+	+ độ dài x = 5
+	+ độ dài y = -3
+	=> vector bắt đầu từ (0,0) và đi qua A(5, -3)
+
+	* Nên vẽ x trước rồi đến y
+	* nếu x hoặc y quay về phần âm thì kết quả là âm và ngc lại
+

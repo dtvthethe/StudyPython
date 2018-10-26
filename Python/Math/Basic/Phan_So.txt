@@ -1,0 +1,4 @@
+1/a**n = a**-n
+
+a/b (chia) c/d = a*d / c*b
+
