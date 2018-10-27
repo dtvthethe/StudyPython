@@ -78,8 +78,43 @@
 *PIP
 	pip uninstall xxx
 
+
 *RANDOM:
 	+ random.shuffle
 	+ random.seed(x): đảo list x lần
 ????? lambda
 ????? 
+
+* Exception:
+	- BaseException
+		+ Exception:
+			# Zero
+			# KeyError
+			#...
+		+ SystemExit -> cause OS system
+		+ Keyboard -> cause hardware
+ko đúng => Gobal variable:
+	+ phạm vi của biến chỉ áp dụng cho def (function) / class
+	+ ko áp dụng cho script như: try, if, for => ko cần phải khai báo global variable
+
+* Assert:
+	assert a != 0 , ngc lại đk kien của biểu thức thì msg lỗi
+	-> nếu a == 0 : sai => msg lỗi
+	-> nếu a != 0 : đúng
+	=> a phải thỏa mãn đk của assert
+
+* module: chứa func
+	from module ( thư . mục ) import foo, bar...(tên .py)
+	import foo, bar... (tên .py
+)
+	module là tên file py hoặc path file phân cách bởi dấu "."
+	để khai báo hàm private thì dùng dấu _ trước tên hàm vd: _func()
+	=> chạy trên chính file đó luôn luôn có tên là "__main__"
+
+* package: các file .py(module), chứa các package con
+	chứa file __init__.py: sẽ chạy fle này đầu tiên và chạy 1 lần
+	dùng dáu . để import nội dung con
+
+* gen file requirmrnt: pip freeze tên_file.txt
+* cài từ file requirmrnt: pip install -r tên_file.txt
+* pip install -U <ten package>: cập nhật phiên bản mới nhất 
