@@ -16,3 +16,6 @@ vector a(5, -3):
 	* Nên vẽ x trước rồi đến y
 	* nếu x hoặc y quay về phần âm thì kết quả là âm và ngc lại
 
++ - vector
+	x +- x 
+	y +- y
