@@ -1,0 +1,24 @@
+Huyền: Là cạnh đối diện với góc vuông
+Đối: là cạnh đối diện vs góc cần tính
+
+
+
+
+Sin= Di hoc
+Cos= ko Hu
+Tan= Doan Ket
+Cot = ! tan
+
+
+
+Sin => vd: sin(30), sin(90), sin(180)
+
+Sin**-1 => sin**-1(1) , sin**-1(1/2)
+
+================BAN TAY TRAI====================
+90 60 45 30 0
+
+sin = sqrt(só lượng các ngón bên trái) / 2 
+cos = sqrt(số                    phải) / 2 
+tan = sin/cos
+cot = cos/sin

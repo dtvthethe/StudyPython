@@ -1,8 +1,3 @@
-a = 0
-b = False
+import math
 
-while a < 10 and b == False:
-	# if a == 3:
-	# 	b = True
-	print(a)
-	a += 1
+print(math.atan2(6,-8))

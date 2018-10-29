@@ -1,0 +1,2 @@
+Chu vi = tổng 3 cạnh cộng lại
+S = tích 2 cạnh góc vuông / 2

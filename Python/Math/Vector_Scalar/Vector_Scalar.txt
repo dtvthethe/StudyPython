@@ -19,3 +19,11 @@ vector a(5, -3):
 + - vector
 	x +- x 
 	y +- y
+
+vector don vi: u^
+	|a| = (x,y) = N
+	|u^| = (x/N, y/N) = K => độ lớn vector đon vị u^
+
+Nếu góc là âm => đang quay ngược chiều kim đồng hồ
+
+
