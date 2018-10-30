@@ -4,11 +4,15 @@ def read(str_path_file):
     :param str_path_file: Text file path to read
     :return: All text in your text file
     """
-    file = open(str_path_file, 'r')
-    text = file.read()
-    file.close()
+    file = None
+    try:
+        file = open(str_path_file, 'r')
+        text = file.read()
+    except:
+        text = None
+    finally:
+        if file is not None: file.close()
     return text
-
 
 def write(str_path_file, text_content):
     """
@@ -16,9 +20,14 @@ def write(str_path_file, text_content):
     :param str_path_file: Text file path to write
     :param text_content: Content text to write
     """
-    file = open(str_path_file, 'w')
-    file.write(text_content)
-    file.close()
+    file = None
+    try:
+        file = open(str_path_file, 'w')
+        file.write(text_content)
+    except:
+        pass
+    finally:
+        if file is not None: file.close()
 
 
 def count_by_lines(str_path_file):
