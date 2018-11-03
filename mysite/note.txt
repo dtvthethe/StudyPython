@@ -1,0 +1,14 @@
+Add app: python manage.py startapp <app name>
+
+make migration: python manage.py makemigrations polls
+
+T-SQL: python manage.py sqlmigrate polls 0001
+migration: python manage.py migrate
+create super user: python manage.py createsuperuser
+    dtvthe
+    d***ha
+play with API:
+    python manager.py shell
+
+- Pausing: add model to Admin
+- Next question: The View
