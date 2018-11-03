@@ -1,0 +1,21 @@
+Cho đến nay, đã có nhiều dịch vụ phiên dịch trực tuyến cho phép người dùng nói hoặc viết một câu, nhưng lại khá chậm trễ khi phiên dịch. Ngược lại, công cụ dịch thuật của Baidu cho phép các câu từ được dịch gần như ngay lập tức, tương tự như một phiên bản kỹ thuật số của những phiên dịch viên.
+
+Sản phẩm này là một bước đột phá đối với Baidu, công ty này đã đầu tư rất mạnh vào lĩnh vực AI trong vòng vài năm nay, với hy vọng có thể xây dựng các hoạt động kinh doanh trên lĩnh vực công nghệ.
+
+Khả năng xử lý ngôn ngữ một cách tự nhiên của công cụ này, khả năng của các loại máy khi hiểu lời nói của ngon người, đã được phát triển với tốc độ khá nhanh. Đây được xem như là một công nghệ quan trọng có thể được tích hợp trên một số thiết bị, đặc biệt là trợ lý giọng nói. Và công nghệ âm thanh được xem là một "chiến trường lớn" đối với những gã khổng lồ công nghệ, như Amazon, Apple và Google.
+
+Hiện tại, công cụ dịch thuật của Baidu chỉ mới có thể dịch từ tiếng Anh sang tiếng Trung và ngược lại, hoặc tiếng Anh sang tiếng Đức.
+
+Các công cụ AI đòi hỏi số lượng dữ liệu lớn để học hỏi. Baidu đã đào tạo AI của mình với hơn 2 triệu câu tiếng Anh và tiếng Trung, Liang Huang, nhà khoa học tại Baidu cho hay. Điều này cho phép "phiên dịch viên" kỹ thuật số của Baidu có thể dịch hai ngôn ngữ này gần như ngay lập tức, dù có cấu trúc câu rất khác nhau.
+
+Baidu đã sử dụng ví dụ này trong một bài đăng trên blog: "Tổng thống Bush gặp Tổng thống Nga Putin tại Moscow". Trong tiếng Trung Quốc, động từ "meet" sẽ đứng ở cuối câu. Nhưng khi dịch sang tiếng Anh, từ này sẽ đứng ở vị trí thứ ba trong câu và đúng ngữ pháp của ngôn ngữ đó. Nhờ quá trình đào tạo với các bộ dữ liệu, công cụ của Baidu có thể dự đoán từ sẽ xuất hiện trong câu tiếng Anh, ngay cả trước khi từ đó được nói ra.
+
+Huang trả lời CNBC: "Chúng tôi đào tạo hệ thống này để dự đoán nghĩa tiếng Anh cho tiền tố trong tiếng Trung Quốc. Bạn thấy rằng nếu Bush hoặc bất kỳ tổng thống Mỹ nào từng ở Moscow, ông ấy có thể sẽ gặp một ai đó."
+
+Đây không phải là vấn đề đối với một công cụ không đưa ra bản dịch ngay lập tức thì việc chậm trễ khi dịch cho phép công cụ đó đánh giá cấu trúc câu trước khi thực hiện bản dịch. Nhưng đối với công cụ phiên dịch này thì sự chậm trễ không thể xảy ra. Công cụ này cũng có thể điều chỉnh thời gian đưa ra bản dịch, có nghĩa là người dùng có thể điều chỉnh thời gian giữa từ đang nói và bản dịch của nó. Thời gian chậm càng nhiều thì bản dịch càng chất lượng đối với một số ngôn ngữ.
+
+Hiện tại, công cụ này chỉ hỗ trợ dịch từ tiếng Trung Quốc sang tiếng Anh, nhưng Huang cho biết đó là "ngôn ngữ trung lập" và trong tương lai sẽ hỗ trợ nhiều cặp ngôn ngữ khác.
+
+Huang cho biết, Baidu đang có kế hoạch tích hợp trình phiên dịch AI vào thiết bị phiên dịch phát wifi, một sản phẩm đã được công bố vào đầu năm nay. Công ty này cũng sẽ sử dụng công nghệ mới để dịch các bài phát biểu tại Hội nghị Thế giới Baidu vào ngày 1 tháng 11 tới đây tại Bắc Kinh.
+
+Tuy nhiên, Baidu cũng thừa nhận về những hạn chế của công cụ dịch thuật này và cho biết công cụ này vẫn chưa thể thay thế các phiên dịch viên và thực hiện phiên dịch trong một sự kiện chính trị lớn.

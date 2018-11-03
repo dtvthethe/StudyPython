@@ -1,3 +1,3 @@
-import math
+for i in range(10, -1, -1):
+	print(i)
 
-print(math.atan2(6,-8))

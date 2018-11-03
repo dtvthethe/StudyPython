@@ -26,4 +26,4 @@ vector don vi: u^
 
 Nếu góc là âm => đang quay ngược chiều kim đồng hồ
 
-
+Tính độ dài giưã 2 đoạn thẳng thì lấy tan**-1(y/x) -> góc phải <= 90 vì đã có 1 góc vuông 90 (xem hình picture1)

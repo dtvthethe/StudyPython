@@ -9,12 +9,23 @@ for i in range(0, 11):
     print(fibonacci(i), end=", ")
 
 # Bai 2 a, trang 18
+'''
+bai nay co cach giai khac nhu sau:
+    1) looo by word
+    2) if word is a key exists in dictionary:
+        + addition 1
+        + create new key with key = word and value = 1
+'''
 print('')
 print('\nBai 2 a, trang 18:')
 print('Tu xuat hien nhieu nhat trong file text: "%s"' %top_word_appear(str_path_text_file))
 
 
 # Bai 2 b, trang 18
+'''
+Dùng loop + enumerate -> chỉ về 1 bên là index 1 bên là item
+từ bên phải sẽ là index + 1
+'''
 print('\nBai 2 b, trang 18:')
 for item in list_word_counter(str_path_text_file, 'the'):
     print(item)
