@@ -1,0 +1,10 @@
+<form action="{% url 'polls:addquestion' %} " method="post">
+    {% csrf_token %}
+
+    {% for item in form %}
+        {{ item.errors }}
+        {{ item.label_tag }} {{ item }}
+    {% endfor %}
+
+    <input type="submit" value="Save" />
+</form>
