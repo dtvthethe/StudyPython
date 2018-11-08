@@ -1,4 +1,6 @@
-runserver: python manage.py runserver
+runserver:
+python manage.py runserver
+python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
 add envirment: python -m venv venv
 
@@ -10,7 +12,7 @@ T-SQL: python manage.py sqlmigrate polls 0001
 migration: python manage.py migrate
 create super user: python manage.py createsuperuser
     dtvthe
-    d***ha
+    123
 play with API:
     python manager.py shell
 
