@@ -1,0 +1,65 @@
+*Lambda:
+	lambda argument_list : expression
+	map(func, seq) -> return iterator
+	filter(func, seq) -> return iterator
+
+_ Đa hình:
+	xe: 5 km/h
+	xe Ford: tốc độ 25 km/h
+	xe Audi: tốc  độ 50 km/h
+	
+- Đóng gói:
+	private : __
+
+_ Trừu tượng:
+	phải định nghĩa các phương thức là abstract
+	
+- COnstrcutor:
+	__init__()
+- Detractor:
+	__del__()
+	
+_ Class: có 2 loại biến:
+	+ biên trong class (ko nằm trong __init__()):
+		Chỉ là biến của class, bên ngoài truy cập đc và nó giống như static => ko bị reset khi khởi tạo mới
+	+ biến trong init là: biến của dối tượng, bị reset khi khởi tạo mới
+		- : biến public
+		- __: biến private
+		
+	+ những phương thức cho phép override:
+		__str__()
+		__len__() -> phải tự định nghĩa, ko phải len của class mà len do tự định nghiã
+		__add__()
+		__sub__()
+		
+- Del: để xóa 1 đối tượng
+
+* Biến class:		
+	Nguoi.ten += 1: => truy cập bằng tên class
+	hoc_vien_1.__class__.ten += 1: => truy cập bằng tên đối tượng
+* Kế thừa:
+	class A:
+		__init__(name)
+		
+	class B(A):
+		__init__(name, age):
+			super().__init__(name) => tất cả các lớp kế thừa đều đc gọi hàm __init__
+			A.__init__(name) => chỉ ra chính xác là lớp kế thừa nào
+			
+	(**) => ko thể thao tác trực tiếp vs thuộc tính mà phải thông qua func
+	
+* Đa hình:
+	class A:
+		leg():
+			return x
+		
+	class B(A):
+		_leg():
+			
+* Trừu tượng:
+	from abc import ABC, abstractmethod
+	class phải kế thừa từ ABC để có abstractmethod
+	@abstractmethod => @ là phạm vi
+	
+		
+* Thể hiện 1 đối tượng bằng 1 dâu "_"

@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be67090c-8339-49e6-b1b8-76fcb345ad9a" name="Default Changelist" comment="Python day1">
-      <change afterPath="$PROJECT_DIR$/day6/Baitap_Exception_Module_Package/answer_homework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Part1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Part1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day7/baitap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day7/lambda_huongdan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day7/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day6/Baitap_Exception_Module_Package/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day6/Baitap_Exception_Module_Package/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Math/Vector_Scalar/Vector_Scalar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Math/Vector_Scalar/Vector_Scalar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/lyrics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day5/lyrics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day5/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/text_utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/day5/text_utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/mysite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mysite/polls/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/polls/migrations/0001_initial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +39,9 @@
     <SUITE FILE_PATH="coverage/Basic$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1539508484122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
     <SUITE FILE_PATH="coverage/Basic$ptbac2.coverage" NAME="ptbac2 Coverage Results" MODIFIED="1540111201228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
     <SUITE FILE_PATH="coverage/Basic$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1540569692102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day5" />
+    <SUITE FILE_PATH="coverage/Basic$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1541822856298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day7" />
     <SUITE FILE_PATH="coverage/Basic$part2_2.coverage" NAME="part2_2 Coverage Results" MODIFIED="1540391782917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
-    <SUITE FILE_PATH="coverage/Basic$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1539495545513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
+    <SUITE FILE_PATH="coverage/Basic$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1541821222810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day7" />
     <SUITE FILE_PATH="coverage/Basic$part2_1.coverage" NAME="part2_1 Coverage Results" MODIFIED="1540110231410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
     <SUITE FILE_PATH="coverage/Basic$workwithpandas.coverage" NAME="workwithpandas Coverage Results" MODIFIED="1540114623358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
   </component>
@@ -117,9 +128,58 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1477408762">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="19" />
+          <entry key="py" value="1292" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Python" value="1292" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day7/baitap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+              <folding>
+                <marker date="1541824327020" expanded="true" signature="14:19" ph="..." />
+                <marker date="1541824327020" expanded="true" signature="210:215" ph="..." />
+                <marker date="1541824327020" expanded="true" signature="568:723" ph="..." />
+                <marker date="1541824327020" expanded="true" signature="744:749" ph="..." />
+                <marker date="1541824327020" expanded="true" signature="744:943" ph="..." />
+                <marker date="1541824327020" expanded="true" signature="988:1024" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,6 +228,8 @@
         <option value="$PROJECT_DIR$/day6/main.py" />
         <option value="$PROJECT_DIR$/day6/Baitap_Exception_Module_Package/main.py" />
         <option value="$PROJECT_DIR$/day6/Baitap_Exception_Module_Package/answer_homework.py" />
+        <option value="$PROJECT_DIR$/day7/main.py" />
+        <option value="$PROJECT_DIR$/day7/baitap.py" />
       </list>
     </option>
   </component>
@@ -198,6 +260,11 @@
               <item name="Basic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Basic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="day7" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -207,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -227,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.answer_homework">
+  <component name="RunManager" selected="Python.main (4)">
     <configuration name="answer_homework" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Part1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,7 +361,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Part1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -302,12 +369,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TkinterStudy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TkinterStudy/main.py" />
+      <option name="SCRIPT_NAME" value="D:\StudyPython\Python\Basic\day7\lambda_huongdan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,7 +383,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Part1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,12 +391,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day7/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -339,19 +406,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.main (2)" />
       <item itemvalue="Python.answer_homework" />
+      <item itemvalue="Python.main (3)" />
+      <item itemvalue="Python.main (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (4)" />
+        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.answer_homework" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -370,14 +437,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21406959" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2990196" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34477124" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34369886" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -440,13 +508,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day1/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28866">
@@ -489,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day3/part1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day4/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -531,21 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day3/part2_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/doc_so_tien.py" />
-    <entry file="file://$PROJECT_DIR$/day3/part2_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TkinterStudy/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
@@ -569,21 +609,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day5/data2.txt" />
     <entry file="file://$PROJECT_DIR$/Day5/data.txt" />
-    <entry file="file://$PROJECT_DIR$/Day5/lyrics.txt">
+    <entry file="file://$PROJECT_DIR$/day5/lyrics.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/main.py">
+    <entry file="file://$PROJECT_DIR$/day5/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day5/text_utility.py">
+    <entry file="file://$PROJECT_DIR$/day5/text_utility.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
@@ -604,9 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,8 +665,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3/part2_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3/part1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day3/part2_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1541822854575" expanded="true" signature="12:17" ph="..." />
+            <marker date="1541822854575" expanded="true" signature="110:115" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7/lambda_huongdan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day7/baitap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <marker date="1541824327020" expanded="true" signature="14:19" ph="..." />
+            <marker date="1541824327020" expanded="true" signature="210:215" ph="..." />
+            <marker date="1541824327020" expanded="true" signature="568:723" ph="..." />
+            <marker date="1541824327020" expanded="true" signature="744:749" ph="..." />
+            <marker date="1541824327020" expanded="true" signature="744:943" ph="..." />
+            <marker date="1541824327020" expanded="true" signature="988:1024" ph="..." />
           </folding>
         </state>
       </provider>
