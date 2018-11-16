@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be67090c-8339-49e6-b1b8-76fcb345ad9a" name="Default Changelist" comment="Python day1">
-      <change afterPath="$PROJECT_DIR$/day7/baitap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7/lambda_huongdan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/lyrics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day5/lyrics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day5/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/text_utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/day5/text_utility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/mysite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/mysite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mysite/polls/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../mysite/polls/migrations/0001_initial.py" afterDir="false" />
-    </list>
+    <list default="true" id="be67090c-8339-49e6-b1b8-76fcb345ad9a" name="Default Changelist" comment="Python day1" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +114,10 @@
     <session id="-1477408762">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.91" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -161,7 +145,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day7/baitap.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -170,10 +154,6 @@
               <folding>
                 <marker date="1541824327020" expanded="true" signature="14:19" ph="..." />
                 <marker date="1541824327020" expanded="true" signature="210:215" ph="..." />
-                <marker date="1541824327020" expanded="true" signature="568:723" ph="..." />
-                <marker date="1541824327020" expanded="true" signature="744:749" ph="..." />
-                <marker date="1541824327020" expanded="true" signature="744:943" ph="..." />
-                <marker date="1541824327020" expanded="true" signature="988:1024" ph="..." />
               </folding>
             </state>
           </provider>
@@ -252,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,6 +248,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,7 +419,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -703,10 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1541822854575" expanded="true" signature="12:17" ph="..." />
-            <marker date="1541822854575" expanded="true" signature="110:115" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

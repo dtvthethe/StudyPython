@@ -1,0 +1,63 @@
+[
+    {
+        "doc_type": 1,
+        "ma_tl": "SACH001",
+        "ten_xb": "NXB GD",
+        "so_ban": 12,
+        "ten_tg": "Nguyen Van A",
+        "so_trang": 50
+    },
+    {
+        "doc_type": 1,
+        "ma_tl": "SACH002",
+        "ten_xb": "NXB Kim Dong",
+        "so_ban": 12,
+        "ten_tg": "To Hoai",
+        "so_trang": 165
+    },
+    {
+        "doc_type": 1,
+        "ma_tl": "SACH003",
+        "ten_xb": "NXB GD",
+        "so_ban": 12,
+        "ten_tg": "Tran Dang Khoa",
+        "so_trang": 340
+    },
+    {
+        "doc_type": 2,
+        "ma_tl": "TAPCHI001",
+        "ten_xb": "NXB GD",
+        "so_ban": 23,
+        "so_ph": 80,
+        "thang_ph": 3
+    },
+    {
+        "doc_type": 2,
+        "ma_tl": "TAPCHI002",
+        "ten_xb": "NXB Thanh Nien",
+        "so_ban": 13,
+        "so_ph": 66,
+        "thang_ph": 2
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "BAO001",
+        "ten_xb": "NXB Thanh Nien",
+        "so_ban": 23,
+        "ngay_ph": 23
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "BAO002",
+        "ten_xb": "NXB Kim Dong",
+        "so_ban": 45,
+        "ngay_ph": 22
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "BAO003",
+        "ten_xb": "NXB GD",
+        "so_ban": 66,
+        "ngay_ph": 6
+    }
+]
