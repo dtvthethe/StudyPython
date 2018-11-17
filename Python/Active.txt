@@ -4,7 +4,8 @@ C:\Windows\System32\drivers\etc
 Linux:
 /etc/hosts
 
-OSX:
+OSX: 
+App Cleaner Pro
 /private/etc/hosts
 
 Add this host:
