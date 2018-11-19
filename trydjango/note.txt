@@ -1,3 +1,9 @@
+- Setting after clone project:
+    + python3 -m venv <evn name>
+    + Preferences > Project Interpreter > Select Python version at step 1
+    + Install from requirement file
+
+
 -runserver:
 python manage.py runserver
 python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
