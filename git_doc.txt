@@ -18,3 +18,8 @@ git checkout master
 git merge <from branch>
 git pull
 git push origin master
+
+— Remove:
+git rm -r <folder name> | git rm <filename>
+git commit -m’<msg>’
+git push origin <branch>
