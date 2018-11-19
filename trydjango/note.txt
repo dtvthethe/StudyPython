@@ -2,7 +2,6 @@
     + Preferences > Project Interpreter > Install new VENV
     + Install from requirement file
 
-
 -runserver:
 python manage.py runserver
 python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
