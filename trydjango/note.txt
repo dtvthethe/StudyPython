@@ -1,6 +1,5 @@
 - Setting after clone project:
-    + python3 -m venv <evn name>
-    + Preferences > Project Interpreter > Select Python version at step 1
+    + Preferences > Project Interpreter > Install new VENV
     + Install from requirement file
 
 
