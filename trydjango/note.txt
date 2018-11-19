@@ -1,20 +1,17 @@
-runserver:
+-runserver:
 python manage.py runserver
 python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
-add envirment: python -m venv venv
+-add envirment: python -m venv venv
 
-Add app: python manage.py startapp <app name>
+-Add app: python manage.py startapp <app name>
 
-make migration: python manage.py makemigrations polls
+-make migration: python manage.py makemigrations polls
 
-T-SQL: python manage.py sqlmigrate polls 0001
-migration: python manage.py migrate
-create super user: python manage.py createsuperuser
+-T-SQL: python manage.py sqlmigrate polls 0001
+-migration: python manage.py migrate
+-create super user: python manage.py createsuperuser
     dtvthe
     123
-play with API:
+-play with API:
     python manager.py shell
-
-- Pausing: add model to Admin
-- Next question: The View
