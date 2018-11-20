@@ -7,11 +7,9 @@
 <body>
     <h2>{{ title }}</h2>
     {% for row in data_rows %}
-        {{ row.id }}<br>
-        {{ row.title }}<br>
+        <a href="{% url 'posts:detail' id=row.id %}">{{ row.title }}</a><br>
         {{ row.content }}<br>
-        {{ row.updated }}<br>
-        {{ row.timestamp }}<br>
+        {{ row.updated }} --- {{ row.timestamp }}<hr>
     {% endfor %}
 </body>
 </html>

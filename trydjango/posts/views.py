@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, get_object_or_404
 from .models import Post
 
 
@@ -8,8 +8,12 @@ def create(request):
 
 
 def detail(request, id = -1):
-    return HttpResponse('detail')
-
+    instance = get_object_or_404(Post, id=id)
+    context = {
+        'title': 'Detail: %s' %(instance.title),
+        'data_row': instance
+    }
+    return render(request, 'post/detail.html', context= context)
 
 def list(request):
     context = {

@@ -45,3 +45,10 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 - urls:
     type: str, int, slug, uuid, path
     EX: blog/<int:year>/
+
+- namespace:
+    1> in urls.py: path('<custom urlname>/', include('<appname>.urls', namespace='<custom urlname>'))
+    2> in <appname>.urls.py: app_name = '<appname>'
+
+    in .py: return reverse('<app_name step 2>:index', something here)
+    in .html: {% url '<app_name step 2>:index' %}
