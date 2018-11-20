@@ -20,4 +20,21 @@
         {{ row.updated }} ---{{ row.timestamp }}
         <hr>
     {% endfor %}
+    <div class="pagination">
+    <span class="step-links">
+        {% if data_rows.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ data_rows.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ data_rows.number }} of {{ data_rows.paginator.num_pages }}.
+        </span>
+
+        {% if data_rows.has_next %}
+            <a href="?page={{ data_rows.next_page_number }}">next</a>
+            <a href="?page={{ data_rows.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+    </div>
 {% endblock %}
