@@ -86,3 +86,29 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
         {% endblock %}
     *> include .html to layout: (partial layout so data control must in this function not other or from other function)
         {% include "xx.html" %}
+
+
+- Static file: in managerpy
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, "static"),
+        ...
+    ]
+
+
+    {% load static %} or {% staticfiles %}
+    <img src="{% static "my_app/example.jpg" %}" alt="My image">
+
+- Static file serving upload files:
+    1> in urls.py to to that:
+        from django.conf import settings
+        from django.conf.urls.static import static
+
+        urlpatterns = [
+            ...
+        ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+    2> in setting add:
+        STATIC_ROOT = os.path.join(BASE_DIR, "your name folder")
+        => the folder name must be "STATIC_ROOT"
+
+    3> run cmd: python manage.py collectstatic

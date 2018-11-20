@@ -1,10 +1,14 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>List</title>
+    <link rel="stylesheet" href="{% static 'post_style.css' %}"></link>
 </head>
 <body>
+
+    <img src="{% static 'song.png' %}" alt="new song">
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
