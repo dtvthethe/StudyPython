@@ -31,6 +31,7 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
                         filter(<property> <operation> <value>)
                         create(<property> = <value>, ...)
 
+
 - Query: see more with keyword 'shortcuts'
     <ModelName>.objects.
                         get_object_or_404(modelName, <property> = <value>)
@@ -68,6 +69,20 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
     form = <NameForm>.(request.POST or None, instance = Object query)
 
 - DELETE VIEW: data post from submit:
-
+    object_or_404xxx.delete()
 
 - redirect: redirect('namespace path format)
+    => mesage just work when redirect
+
+- template & inerit:
+    1> base.html:
+        {% block <blockname> %}
+        {% endblock %}
+    2> inheritxxx.html:
+        {% extends "path to base.html" %}
+
+        {% block <blockname> %}
+        // html code here
+        {% endblock %}
+    *> include .html to layout: (partial layout so data control must in this function not other or from other function)
+        {% include "xx.html" %}

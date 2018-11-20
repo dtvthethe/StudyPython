@@ -1,16 +1,20 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404, redirect
+from django.contrib import messages
 from .models import Post
 from .forms import PostForm
 
 
 # Create your views here.
 def create(request):
-    if request.method == 'POST':
-        form = PostForm(request.POST or None)
-        if form.is_valid():
-            instance = form.save(commit=False)
-            instance.save()
-
+    try:
+        if request.method == 'POST':
+            form = PostForm(request.POST or None)
+            if form.is_valid():
+                instance = form.save(commit=False)
+                instance.save()
+                messages.success(request, 'Create successfully!')
+    except BaseException as be:
+        messages.error(request, be)
     return render(request, 'post/create.html', {'form': PostForm()})
 
 
@@ -31,17 +35,28 @@ def list(request):
 
 
 def update(request, id = None):
-    instance = get_object_or_404(Post, id = id)
-    form = PostForm(request.POST or None, instance=instance)
-    if form.is_valid():
-        instance = form.save(commit=False)
-        instance.save()
-        return redirect('posts:index')
-    context = {
-        'title':'Post edit %s' %(instance.title),
-        'form': form
-    }
+    try:
+        instance = get_object_or_404(Post, id = id)
+        form = PostForm(request.POST or None, instance=instance)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            messages.success(request, 'Update successfully!')
+            return redirect('posts:index')
+        context = {
+            'title':'Post edit %s' %(instance.title),
+            'form': form
+        }
+    except BaseException as be:
+        messages.error(request, be)
     return render(request,'post/edit.html', context=context)
 
 def delete(request, id = None):
-    return HttpResponse('delete')
+    try:
+        instance = get_object_or_404(Post, id=id)
+        instance.delete()
+        messages.success(request, 'Delete successfully!')
+    except BaseException as be:
+        messages.error(request, be)
+    return redirect('posts:index')
+

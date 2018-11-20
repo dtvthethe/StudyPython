@@ -5,6 +5,13 @@
     <title>{{ title }}</title>
 </head>
 <body>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 <h2>{{ data_row.id }} - {{ data_row.title }}</h2>
 {{ data_row.content }}<br>
 {{ data_row.updated }}<br>
