@@ -52,3 +52,22 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
     in .py: return reverse('<app_name step 2>:index', something here)
     in .html: {% url '<app_name step 2>:index' %}
+
+- ADD VIEW: data POST form submit:
+    request.POST
+    request.POST.get('<property>') => don't use
+
+    form = <NameForm>.(request.POST or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+
+        form.cleaned_data.get('<property>') => get data after check validate
+
+- EDIT VIEW: data post from submit:
+    form = <NameForm>.(request.POST or None, instance = Object query)
+
+- DELETE VIEW: data post from submit:
+
+
+- redirect: redirect('namespace path format)

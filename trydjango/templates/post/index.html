@@ -6,8 +6,11 @@
 </head>
 <body>
     <h2>{{ title }}</h2>
+    <a href="{% url 'posts:create' %}">Create new Post</a><br>
     {% for row in data_rows %}
-        <a href="{% url 'posts:detail' id=row.id %}">{{ row.title }}</a><br>
+        <a href="{% url 'posts:detail' id=row.id %}">{{ row.title }}</a> |
+        <a href="{% url 'posts:update' id=row.id %}">Edit</a><br> |
+        <a href="{% url 'posts:delete' id=row.id %}">Delete</a><br>
         {{ row.content }}<br>
         {{ row.updated }} --- {{ row.timestamp }}<hr>
     {% endfor %}
