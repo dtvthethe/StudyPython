@@ -1,29 +1,23 @@
+{% extends "base.html" %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>List</title>
-    <link rel="stylesheet" href="{% static 'post_style.css' %}"></link>
-</head>
-<body>
-
-    <img src="{% static 'song.png' %}" alt="new song">
+{% block title %}Post list{% endblock %}
+{% block container %}
+    <img src="{% static 'song.png' %}" alt="new song" style="width: 80px">
     {% if messages %}
-    <ul class="messages">
-        {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-    </ul>
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
     {% endif %}
     <h2>{{ title }}</h2>
     <a href="{% url 'posts:create' %}">Create new Post</a><br>
     {% for row in data_rows %}
         <a href="{% url 'posts:detail' id=row.id %}">{{ row.title }}</a> |
-        <a href="{% url 'posts:update' id=row.id %}">Edit</a><br> |
+        <a href="{% url 'posts:update' id=row.id %}">Edit</a> |
         <a href="{% url 'posts:delete' id=row.id %}">Delete</a><br>
         {{ row.content }}<br>
-        {{ row.updated }} --- {{ row.timestamp }}<hr>
+        {{ row.updated }} ---{{ row.timestamp }}
+        <hr>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
