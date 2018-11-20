@@ -10,12 +10,38 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
 -Add app: python manage.py startapp <app name>
 
--make migration: python manage.py makemigrations polls
+- 1> make migration: python manage.py makemigrations <app name>
 
--T-SQL: python manage.py sqlmigrate polls 0001
--migration: python manage.py migrate
+- 2> T-SQL: python manage.py sqlmigrate polls 0001
+- 2> migration: python manage.py migrate
+
 -create super user: python manage.py createsuperuser
     dtvthe
     123
--play with API:
+-play with API: Query, see more with keyword 'shortcuts'
     python manager.py shell
+
+    <ModelName>.objects.
+                        get_object_or_404(modelName, <property> = <value>) | get(<property> = <value>)
+                        all()
+                        all()[0:N] => limit
+                        all()[offset:N] => offset and limit
+                        order_by('<property name>')
+                        get(<property>__contains = '<keyword>')=> like
+                        filter(<property> <operation> <value>)
+                        create(<property> = <value>, ...)
+
+- Query: see more with keyword 'shortcuts'
+    <ModelName>.objects.
+                        get_object_or_404(modelName, <property> = <value>)
+
+- Shortcut function:
+    render()
+    render_to_response()
+    redirect()
+    get_object_or_404()
+    get_list_or_404()
+
+- urls:
+    type: str, int, slug, uuid, path
+    EX: blog/<int:year>/

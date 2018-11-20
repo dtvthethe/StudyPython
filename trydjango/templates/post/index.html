@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+    <h2>{{ title }}</h2>
+    {% for row in data_rows %}
+        {{ row.id }}<br>
+        {{ row.title }}<br>
+        {{ row.content }}<br>
+        {{ row.updated }}<br>
+        {{ row.timestamp }}<br>
+    {% endfor %}
+</body>
+</html>
