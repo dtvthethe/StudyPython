@@ -23,3 +23,6 @@ git push origin master
 git rm -r <folder name> | git rm <filename>
 git commit -m’<msg>’
 git push origin <branch>
+
+- Get files deleted on local:
+git checkout HEAD .
