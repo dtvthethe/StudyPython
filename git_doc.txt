@@ -1,4 +1,4 @@
-press 'q' to exit git log
+﻿press 'q' to exit git log
 
 git status
 
@@ -26,3 +26,6 @@ git push origin <branch>
 
 - Get files deleted on local:
 git checkout HEAD .
+
+- Update source code:
+git pull
