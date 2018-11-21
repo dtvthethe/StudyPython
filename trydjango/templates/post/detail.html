@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}Post list{% endblock %}
+
+{% load mytemplatetag %}
+
 {% block container %}
     {% if messages %}
         <ul class="messages">
@@ -10,7 +13,7 @@
         </ul>
     {% endif %}
     <h2>{{ data_row.id }} - {{ data_row.title }}</h2>
-    {{ data_row.content }}<br>
+    {{ data_row.content | my_upper | truncatewords:2 }}<br>
     {{ data_row.updated }}<br>
     {{ data_row.timestamp }}<br>
 {% endblock %}

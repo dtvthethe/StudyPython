@@ -10,7 +10,7 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
 -Add app: python manage.py startapp <app name>
 
-- 1> make migration: python manage.py makemigrations <app name>
+- 1> make migration: python manage.py makemigrations <app name> -> don't need input appname
 
 - 2> T-SQL: python manage.py sqlmigrate polls 0001
 - 2> migration: python manage.py migrate
@@ -112,3 +112,34 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
         => the folder name must be "STATIC_ROOT"
 
     3> run cmd: python manage.py collectstatic
+
+- Upload file: in form model add parameter: files=request.FILES or None
+
+- Show img upload not using static, because them not static file, you should: {{ojb.image.url}}
+
+- URL friendly: slug:
+
+- Pre_Save : to do anything before save
+    1> pre_save.connect(<name custom funciton excution>, sender=<ClassName to handle>)
+    2> create funiton: name custom funciton excution -> set any properties to values
+
+*FILTERS AND TAGS
+
+keyword search: Built-in template tags and filters
+
+- Template Filter: like pipe in Angular
+    1> create directory must container in app directory
+    2> create .py file:
+        from django import template
+        register = template.Library()
+
+        @register.filter()
+        def my_upper(value):
+            return value.upper()
+    3> .html file:
+        {% load <name of file created at step 2 >  %}
+
+        {{ ojb.name | my_upper }}
+
+- Template Tag:
+

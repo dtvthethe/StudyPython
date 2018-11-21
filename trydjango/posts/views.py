@@ -9,7 +9,7 @@ from .forms import PostForm
 def create(request):
     try:
         if request.method == 'POST':
-            form = PostForm(request.POST or None)
+            form = PostForm(request.POST or None, request.FILES or None)
             if form.is_valid():
                 instance = form.save(commit=False)
                 instance.save()
@@ -19,13 +19,14 @@ def create(request):
     return render(request, 'post/create.html', {'form': PostForm()})
 
 
-def detail(request, id = None):
-    instance = get_object_or_404(Post, id=id)
+def detail(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     context = {
-        'title': 'Detail: %s' %(instance.title),
+        'title': 'Detail: %s' % (instance.title),
         'data_row': instance
     }
-    return render(request, 'post/detail.html', context= context)
+    return render(request, 'post/detail.html', context=context)
+
 
 def list(request):
     post_list = Post.objects.all()
@@ -39,24 +40,25 @@ def list(request):
     return render(request, 'post/index.html', context=context)
 
 
-def update(request, id = None):
+def update(request, id=None):
     try:
-        instance = get_object_or_404(Post, id = id)
-        form = PostForm(request.POST or None, instance=instance)
+        instance = get_object_or_404(Post, id=id)
+        form = PostForm(request.POST or None, files=request.FILES or None, instance=instance)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.save()
             messages.success(request, 'Update successfully!')
             return redirect('posts:index')
         context = {
-            'title':'Post edit %s' %(instance.title),
+            'title': 'Post edit %s' % (instance.title),
             'form': form
         }
     except BaseException as be:
         messages.error(request, be)
-    return render(request,'post/edit.html', context=context)
+    return render(request, 'post/edit.html', context=context)
 
-def delete(request, id = None):
+
+def delete(request, id=None):
     try:
         instance = get_object_or_404(Post, id=id)
         instance.delete()
@@ -64,4 +66,3 @@ def delete(request, id = None):
     except BaseException as be:
         messages.error(request, be)
     return redirect('posts:index')
-

@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load static %}
+
 {% block title %}Post list{% endblock %}
+
 {% block container %}
     <img src="{% static 'song.png' %}" alt="new song" style="width: 80px">
     {% if messages %}
@@ -13,9 +16,12 @@
     <h2>{{ title }}</h2>
     <a href="{% url 'posts:create' %}">Create new Post</a><br>
     {% for row in data_rows %}
-        <a href="{% url 'posts:detail' id=row.id %}">{{ row.title }}</a> |
+        <a href="{% url 'posts:detail' slug=row.slug %}">{{ row.title }}</a> |
         <a href="{% url 'posts:update' id=row.id %}">Edit</a> |
         <a href="{% url 'posts:delete' id=row.id %}">Delete</a><br>
+        {% if row.image %}
+        <img src="{{ row.image.url }}" alt="{{ row.title }}" style="width: 80px">
+        {% endif %}
         {{ row.content }}<br>
         {{ row.updated }} ---{{ row.timestamp }}
         <hr>
