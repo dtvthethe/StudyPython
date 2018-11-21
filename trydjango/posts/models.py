@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from django.db.models.signals import pre_save
+from django.conf import settings
 import datetime
 
 # Create your models here.
@@ -20,19 +21,20 @@ def create_slug(instance, new_slug=None):
     qs = Post.objects.filter(slug=slug).order_by('-id')
     exists = qs.exists()
     if exists:
-        new_slug = '%s-%s' %(slug, qs.first().id)
+        new_slug = '%s-%s' % (slug, qs.first().id)
         return create_slug(instance, new_slug)
     return slug
 
 
 def pre_save_post_signal_receiver(sender, instance, *args, **kwargs):
-    if not instance.slug: #check this becase update case
+    if not instance.slug:  # check this becase update case
         instance.slug = create_slug(instance)
 
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, default=1)
     image = models.ImageField(upload_to=upload_file_path, null=True, blank=True, height_field='height_field',
                               width_field='width_field')
     height_field = models.IntegerField(default=0)

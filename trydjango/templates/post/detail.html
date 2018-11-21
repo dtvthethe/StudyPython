@@ -13,6 +13,7 @@
         </ul>
     {% endif %}
     <h2>{{ data_row.id }} - {{ data_row.title }}</h2>
+    Author: {{ data_row.user.get_full_name }}<br>
     {{ data_row.content | my_upper | truncatewords:2 }}<br>
     {{ data_row.updated }}<br>
     {{ data_row.timestamp }}<br>
