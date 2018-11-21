@@ -72,7 +72,12 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
     object_or_404xxx.delete()
 
 - redirect: redirect('namespace path format)
-    => mesage just work when redirect
+    => mesage just work when redirect, if you want work on page use form validate
+
+- form validate:
+    raise forms.ValidationError('Message here!')
+    => Should check on each fields. Each field have raise
+
 
 - show error page:
     raise Http404('error content')
@@ -89,7 +94,7 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
         {% endblock %}
     *> include .html to layout: (partial layout so data control must in this function not other or from other function)
         {% include "xx.html" %}
-
+    *> show form well-built: {{ form|crispy }}
 
 - Static file: in managerpy
     STATICFILES_DIRS = [
@@ -154,7 +159,8 @@ keyword search: Built-in template tags and filters
         +check logged: request.user.is_authenticated
         +login:
             1> user = authenticate(request, username=username, password=password)
-            2> login(request, user)
+            2> Should check user is active or not
+            3> login(request, user)
         + logout: logout(request)
 
     Decorators:
@@ -175,6 +181,13 @@ keyword search: Built-in template tags and filters
         equest.user.has_perm('xxx')
     get all permission:
         request.user.get_all_permissions()
+    get all user info:
+        get_user_model
+
+- login + register .... => should be define in new app
+    + password filed input: widget = forms.PasswordInput
+    
+
 
 - Foreign Key to User table:
     from django.conf import settings
@@ -184,3 +197,7 @@ keyword search: Built-in template tags and filters
     + Insert or update:
         instance = form.save(commit=False)
         instance.user = request.user
+
+
+
+
