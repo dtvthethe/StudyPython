@@ -31,10 +31,19 @@ def pre_save_post_signal_receiver(sender, instance, *args, **kwargs):
         instance.slug = create_slug(instance)
 
 
+class Category(models.Model):
+    title = models.CharField(max_length=100)
+    updated = models.DateTimeField(auto_now=True, auto_now_add=False)
+    timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+
 class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, default=1)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=1)
     image = models.ImageField(upload_to=upload_file_path, null=True, blank=True, height_field='height_field',
                               width_field='width_field')
     height_field = models.IntegerField(default=0)
@@ -42,6 +51,7 @@ class Post(models.Model):
     content = models.TextField()
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __unicode__(self):
         return self.title
