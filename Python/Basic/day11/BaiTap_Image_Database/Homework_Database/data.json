@@ -1,0 +1,63 @@
+[
+    {
+        "doc_type": 1,
+        "ma_tl": "sach001",
+        "ten_xb": "NXB Kim Dồng",
+        "so_ban": 12,
+        "ten_tg": "Nguyen Van A",
+        "so_trang": 50
+    },
+    {
+        "doc_type": 1,
+        "ma_tl": "sach002",
+        "ten_xb": "NXB Thanh niên",
+        "so_ban": 12,
+        "ten_tg": "To Hoai",
+        "so_trang": 165
+    },
+    {
+        "doc_type": 1,
+        "ma_tl": "sach003",
+        "ten_xb": "NXB GD",
+        "so_ban": 12,
+        "ten_tg": "Trần Đăng Khoa",
+        "so_trang": 340
+    },
+    {
+        "doc_type": 2,
+        "ma_tl": "tapchi001",
+        "ten_xb": "NXB Trẻ HCM",
+        "so_ban": 23,
+        "so_ph": 80,
+        "thang_ph": 3
+    },
+    {
+        "doc_type": 2,
+        "ma_tl": "tapchi002",
+        "ten_xb": "NXB Kim Đồng",
+        "so_ban": 13,
+        "so_ph": 66,
+        "thang_ph": 2
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "bao001",
+        "ten_xb": "NXB Thanh Niên",
+        "so_ban": 23,
+        "ngay_ph": 23
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "bao002",
+        "ten_xb": "NXB Kim Đồng",
+        "so_ban": 45,
+        "ngay_ph": 22
+    },
+    {
+        "doc_type": 3,
+        "ma_tl": "bao003",
+        "ten_xb": "NXB GD",
+        "so_ban": 66,
+        "ngay_ph": 6
+    }
+]
