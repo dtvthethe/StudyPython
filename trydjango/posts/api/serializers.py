@@ -10,7 +10,8 @@ class PostListSerializer(ModelSerializer):
             'title',
             'slug',
             'content',
-            'category'
+            'category',
+            'user'
         ]
 
 
@@ -35,6 +36,21 @@ class PostDetailSerializer(ModelSerializer):
             'category',
             'timestamp',
             'updated'
+        ]
+
+
+class PostCreateSerializer(ModelSerializer):
+    class Meta:
+        model = Post
+        fields = [
+            # 'id',
+            'title',
+            'slug',
+            'content',
+            # 'timestamp',
+            'category',
+            # 'timestamp',
+            # 'updated'
         ]
 
 

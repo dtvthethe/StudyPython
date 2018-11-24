@@ -10,4 +10,5 @@ urlpatterns = [
     path('<int:pk>', views.PostRetrieveAPIView.as_view(), name='retrieve'),
     path('update/<int:pk>', views.PostUpdateAPIView.as_view(), name='update'),
     path('delete/<int:pk>', views.PostDestroyAPIView.as_view(), name='destroy'),
+    path('insert', views.PostCreateAPIView.as_view(), name='create'),
 ]

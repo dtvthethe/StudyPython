@@ -201,3 +201,17 @@ keyword search: Built-in template tags and filters
 
 
 
+================ REST API ================
+- Xu li truoc khi luu: https://www.django-rest-framework.org/api-guide/generic-views/
+
+    def perform_create|update|delete(self, serializer):
+        serializer.save(user = self.request.user, title = 'Halluuu')
+
+- Parameter URL:
+    lookup_field = 'abc' => abc parameter pattern
+
+- Custom permission: https://www.django-rest-framework.org/api-guide/permissions/#custom-permissions
+    has_permission(self, request, view):
+    has_object_permission(self, request, view, obj): => just work when has_permission method is True
+
+- get_queryset() => If define this function you don't need define queryset attribute or else
