@@ -3,6 +3,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
 from posts.models import Post, Category
 from .serializers import PostListSerializer, CategorySerializer, PostDetailSerializer, PostDeleteSerializer, \
     PostUpdateSerializer, PostCreateSerializer
+from .custom_pagination import PostlimitOffetPagination, PostPageNumberPagination
 from .custom_permssion import IsOwnerPermission
 
 
@@ -10,6 +11,7 @@ class PostListAPIView(ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
     permission_classes = [IsAuthenticated]
+    pagination_class = PostPageNumberPagination
 
 
 class CategoryListAPIView(ListAPIView):
@@ -30,7 +32,7 @@ class PostCreateAPIView(CreateAPIView):
         serializer.save(user = self.request.user, title = 'Halluuu')
 
 
-class PostUpdateAPIView(UpdateAPIView):
+class PostUpdateAPIView(UpdateAPIView, RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostUpdateSerializer
     permission_classes = [IsOwnerPermission]

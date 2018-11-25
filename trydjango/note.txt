@@ -186,6 +186,7 @@ keyword search: Built-in template tags and filters
 
 - login + register .... => should be define in new app
     + password filed input: widget = forms.PasswordInput
+    + check passwrod: using user_obj.check_password('your password')
     
 
 
@@ -202,6 +203,12 @@ keyword search: Built-in template tags and filters
 
 
 ================ REST API ================
+
+can add fields
+
+
+- get: self.request.xyz
+
 - Xu li truoc khi luu: https://www.django-rest-framework.org/api-guide/generic-views/
 
     def perform_create|update|delete(self, serializer):
@@ -215,3 +222,42 @@ keyword search: Built-in template tags and filters
     has_object_permission(self, request, view, obj): => just work when has_permission method is True
 
 - get_queryset() => If define this function you don't need define queryset attribute or else
+
+- create link: https://www.django-rest-framework.org/api-guide/relations/
+    HyperlinkedRelatedField
+    lookup_field => slug
+
+- Replace foreign key with name: SerializerMethodField
+https://www.django-rest-framework.org/api-guide/fields/#serializermethodfield
+or Custom value of field
+def get_<property_name>(self, obj):
+
+write below in your serializer:
+<field name> = <Your Serializer>(read_only=true/False) => this will show an object {} not id
+
+- Validate: https://www.django-rest-framework.org/api-guide/validators/#function-based
+    write in serializers
+    def create(self, validated_data): override this method
+
+    def create(self, validated_data):
+        title = validated_data['title']
+        slug = validated_data['slug']
+        return validated_data
+
+    def validate_email2(self, value): => validate_<name of field>
+        data = self.get_initial()
+        email1 = data.get("email")
+        email2 = value
+        if email1 != email2:
+            raise ValidationError("message here")
+        return value
+
+validate ontionl field: https://www.django-rest-framework.org/api-guide/validators/#optional-fields => should don't use
+def validate(self, data):
+    data['xxx']: current object , xxx is property
+    return data if valid data els raise yyyyy
+
+- Required field:
+    write in serializers
+    just overide field :
+        email = EmailField(label = 'xx')
