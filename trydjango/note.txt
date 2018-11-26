@@ -204,7 +204,10 @@ keyword search: Built-in template tags and filters
 
 ================ REST API ================
 
-can add fields
+1> can add fields
+2> can set permission all apis:
+    settings.py add "REST_FRAMEWORK"
+
 
 
 - get: self.request.xyz
@@ -261,3 +264,5 @@ def validate(self, data):
     write in serializers
     just overide field :
         email = EmailField(label = 'xx')
+
+- JWT: rest_framework_jwt

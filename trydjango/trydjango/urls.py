@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     path('', include('posts.urls', namespace='abc')),
@@ -25,7 +26,17 @@ urlpatterns = [
     path('api/post/', include('posts.api.urls', namespace='thisisnamespaceapi')),
     path('admin/', admin.site.urls),
     # url(r'^api-auth/', include('rest_framework.urls'))
+    url(r'^api-token-auth/', obtain_jwt_token),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+'''
+curl -X POST -d "username=admin&password=password123" http://localhost:8000/api-token-auth/
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTQzMTkyMTI3LCJlbWFpbCI6ImR0dnRoZUBnbWFpbC5jb20ifQ.JFE040Q883E2-5dFKkt1w3ZsLyuNKf6fMZTQa1GBWBw
+
+curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTQzMTkyODA5LCJlbWFpbCI6ImR0dnRoZUBnbWFpbC5jb20ifQ.2JHvqHbEFiBvJJp6UF3n1ZJfkD4hXNiNehrhHv103hI" http://localhost:8000/api/post/post
+
+'''
