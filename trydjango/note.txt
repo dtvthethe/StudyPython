@@ -1,3 +1,5 @@
+- Format code: option + command + L
+
 - Setting after clone project:
     + Preferences > Project Interpreter > Install new VENV
     + Install from requirement file

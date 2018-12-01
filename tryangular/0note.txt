@@ -1,0 +1,316 @@
+Format code: Alt+ Shift + L
+
+Angular CLI:
+    + ng n <project name>: creat new project Angular
+    + ng g c <component name>: create new component
+    + ng g pipe <pipe_name>
+    + ng g service <service_name>
+    + ng g guard <ten active> => tao trong thu muc services/guards  
+    + ng s [--port <port number>]: run app
+App.module:
+    + declarations: components
+    + imports: modules
+    + provides: services
+    + bootstrap: init component
+
+Local storage:
+    - localStorage:
+        .setItem('key', data:string)
+        .getItam('key')
+        .removeItem('key')
+
+`noi dung ${[this.]code here}`: template string
+Call an property in Object type: objectName['propertyName']
+=============
+Binding: 
+    - Component -> View : []=""
+        + [class.<class_name>] = "true/false" : true apply class_name. Moi 1 lan chi su dung dc 1 class
+        + [style.<style_name>.[unit]] = "value": [unit] px em pt don vi
+
+        + [attr.<attribute name>] = "value"
+        + [<propertyName>] = "<value>"
+        + Interpolation: {{ value }}
+    - view -> Component(event Binding): ()=""
+        + on Enter key press: (keyup.enter)="xxx"
+    - Two way Binding: [()]=""
+        Require import FormsModule: import { FormsModule } from '@angular/forms';
+        If containt in tag <form>
+            option 1: name="selGender"
+            option 2: [(ngModelOptions)] = "{standalone: true}"
+
+Structual Directive: https://angular.io/api/common/xxx
+    *: ng-container: dùng để ghi If, For nếu ko muốn ghi vào tag. 
+    *: ng-template: gióng ng-container hoặc  dùng để chứa các khối khi muốn gọi đến. KO nen dung neu nhu muon an/hien vi cai nay chi thuc hien dc 1 lan
+    => nên ghi thẳng vào tag hạn chế dùng 2 cách trên 
+
+    - If Else: *ngIf
+        <div *ngIf="condition; else elseBlock">...</div>
+        <ng-template #elseBlock>...</ng-template>
+
+        
+    or:
+        <div *ngIf="condition; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>...</ng-template>
+        <ng-template #elseBlock>...</ng-template>
+
+    - SwitchCase: []=""
+        + [ngSwitch]="switch_expression"
+        + *ngSwitchCase="match_expression_N"
+        + *ngSwitchDefault
+
+    - For: https://angular.io/api/common/NgForOf    *ngFor
+        + even: chẵn
+        + odd: lẻ
+        + trackBy: dùng để append dữ liệu mới vào sau dữ liệu cũ mà dữ liệu cũ không bị load lại
+            myTractBy(index, item){ //index và item ko cần phải khai báo trong file html: tractBy: myTractBy
+                return item.id; => trả về field là unique
+            }
+
+        <li *ngFor="let user of userObservable | async as users; index as i; first as isFirst">
+            {{i}}/{{users.length}}. {{user}} <span *ngIf="isFirst">default</span>
+        </li>
+
+        <tr loopppp>
+
+Attribute Directive:
+    - [ngClass]: []=""
+        1> thêm hoặc xoá nhiều class cùng một lúc
+        2> nên định nghĩa trong file typesript:
+                return {
+                    class_name: true/false,
+                    class_name_N:true/false
+                }
+        + them: [ngCLass]="['class1', 'class2'...]"
+        + check:
+            [ngClass]="{
+                class_name: true/false,
+                class_name_N:true/false
+            }"
+
+    - [ngStyle]: trương tự [ngClassngClass]
+        + sample.:
+            [ngStyle] = "{
+                'boder': isBoder ? '1px solid' : '2px dot',
+                'color': 'red'....
+            }"
+        *> Nên định nghĩa trong file typescript:
+            return {
+                'boder': isBoder ? '1px solid' : '2px dot',
+                'color': 'red'....
+            }
+
+    - @Input: []="" truyền dữ liệu từ cha -> con
+        1> .html: <app-abc [key]="value"></app-abc>
+        2> child .ts: import Input from @angular/core
+        3> child .ts: 
+            @Input('key') name_var : type = default value
+
+        *> cách viết 2:
+            @Input()
+            set key_var(key: type){
+                ...
+            }
+            get key_var(){
+                return ...
+            }
+    - @Output:  ()="" truyền dữ liệu từ con -> cha
+        1> child: import Output, EventEmitter from @angular/core
+        2> child: 
+            @Output('output_var_name') onNameABC = new EventEmitter<data type>()
+
+            onClick(){
+                this.onNameABC.emit(your value )
+            }
+        3> parent .html 
+            <app-abc (output_var_name)="onGetXYZ($event)" ></app-abc>
+        4> parent .ts:
+            onGetXYZ(value [:data type]){
+                ...
+            }
+Pipe:
+    - Basic Pipe
+        + String: Uppercase, Lowercase, TitleCase, 
+            Slice: "slide :start [:end]" => giong substring
+        + Number: number:'1.0-3'
+            1: nếu ko có ít nhất 1 số thì số 0 đc thêm value
+            .0: nếu đằng sau dấu "." ko có số 0 sẽ đc thêm value
+            -3: lấy 3 con số ở sau "." và từ dộng làm tròn nêu >= 5
+        + Percent: percent : '1.0-3' tự * 100 và thêm dấu "%"
+            1: như Number
+            .0: như Number
+            -3: như Number
+        + Array: Slide : start [:end]
+        + Currency -> tiền tệ:
+            | cuerrency[:code][:đơn vị tiền tệ [:'1.0-3']]
+            vd: 15 | currency : 'VND'
+
+            code: forat chuẩn iso 4217 => 'VND' , 'USD'
+            đơn vị tiền tệ: true/false
+            1.0-3: giống number
+        + Date: date[: 'định dạng']
+            định giạng 'dd/MM/yyyy'
+        + Json: json
+        
+    - Custom pipe:
+        + pass arg: trong hamf tranform neu muon dung bao nhieu param thi tu khai bao de dung
+            tranform (value:type name1, paranameN:type nameN....)
+            value: value intpolation
+            paranameN: muon dung bao nhieu khai bao bay nhieu
+            type nameN; muon dung bao nhieu khai bao bay nhieu
+        => "lodash" su dung thu vien lodash
+
+Lifecycle Hook: (theo thu tu)
+    + Constructor (ko phai lifecycle hook, ko nen khoi tao bien o day): dung  de load service (dependency injection)
+    + ngOnChanges: khi @Input bi thay doi
+                su dung SimpleChange de lay caca gia tri:
+                    > gia tri truoc do
+                    > co phai la lan dau tien chayj ko?
+                    > gia tri hien tai
+
+                    ngOnChanges(simp: SimpleChanges)
+
+    + ngOnInit: dung de khoi tao cac gia tri, nen khoi tao bien o day
+    + ngDoCheck (it dc su dung): cu moi lan ngOnChanges dc goi thi phuong thuc nay dc chay, hay ke ca tren view co thay doi
+        . ngAfterContentInit:
+        . ngAfterContentChecked:
+        . ngAfterViewInit:
+        . ngAfterViewCHeked:
+    + ngOnDestroy:
+
+    cach dung:
+        import tu "@angular/core"
+        ke thua interface vua goi
+        implement method trong interface vua goi
+
+Service: la DI (dendency injecttion)
+viet chung 1 service va cac component goi den dung chung, ko viet code lap di lap lai giua cac components
+
+cach dung:
+    1> import to main app component
+    2> in app xxx import 
+    3> in app xxx:
+        constructor(private _serviceXXX: XXXService){} => khi inject service luoon luon phai thong qua ham cunstructor (tiêm)
+
+        this._serviceXXX.xyz()
+
+Router:
+    1> index.html: <base href="/">
+    2> <router-outlet></router-outlet>: vung can thay doi noi dung
+    3> import RouterModule, Routes from @angular/route
+    4> define Routes:
+        [{
+            path:'', => '**' mark to not found component,
+            [redirectTo: '/pathxx'] => auto redirect to 'pathxx' when user input path is ""
+            component: XXX
+        },...]
+
+        or 
+
+        [{
+            path:'',
+            children:[
+                {
+                    path: '',
+                    component: YYY
+                },....
+            ]
+        },...]
+
+
+    5> at <a> tag .html: <a [routerLink]="['/path']"></a>
+    6> active link (highlight current link): routerLinkActive='active'
+        If routerLinkActive == '':
+            add this: [routerLinkActiveOptions] = { exact: true }
+
+
+    redirect by Event:
+        1> import Router from @angular/router
+        2> inject step 1 to constructor
+        3> redirect: 
+            <name router step 2 >.navigate(['url'])
+            or
+            <name router step 2 >.navigatebyUrl('url')
+
+
+    - Get param "/ /":
+        Cach 1: Cach nay phai load lai trang 
+            1> import ActivitedRoute from @angular/router
+            2> router:
+                {
+                    path:'path/:id', => "id" keyword argument
+                    component: XXX
+                }
+            3> add step 1 to constuctor like service inject
+            4> this.<name of service step 3>.snapshot.params['keyword at step 2']
+
+        Cach 2: Cach nay ko phai load lai trang
+            *) CAch nay phai luu 1 bien o ngoai subcribe de tranh truong hop khi load lai trang van giu dc gia tri
+
+            1-> 3 : nhu tren
+            4> 
+            import Subcription from 'rxjs/Subcription'
+
+            declare like property: private subcription: Subcription;
+
+            this.subcription = this.<name of service step 3>.params.subcrible(data=>{
+                data.<name of service step 3>
+            })
+            CHU Y: neu ko dung nua thi nen huy:
+                onDestroy{
+                    if (this.subcription):
+                        this.subcription.unsubcribe()
+                }
+    - Param "? &":
+        1> Truyen tham so:
+            Cach 1: HTML
+                [routeLink] = "[/products]"
+                [queryParams] = "{key: vaue,...}"
+
+
+            Cach 2: EVENT
+                - giong phan Router / redirect by Event:
+                - <name router step 2 >.navigate(['/url'], {queryParams: {key: value,...}})
+
+        2> Nhan tham so:
+             cach lam tuong tu: Get param "/ /" > Cach 2
+
+CanActive: ngan chan nguoi dung vao 1 link
+    + create guard at: services/guards/xxx
+    + code.. xem {*}
+    + app: import guard da tao trong services/guards/xxx trong providers
+    + route: 
+        1> import services/guards/xxx 
+        2> Routes[
+            {
+                path...,
+                canActive: [Guard_Name import step 1],
+                components...,
+            }
+        ]
+    {*} : return true/false
+
+CanDeActive: khong cho nguoi dung thoat ra khoi router
+    + tuong tu CanActive:
+    + tao guard:
+        import componet
+        import CanDeActive from @angular/router
+        extends CanDeActive<ten component>
+        implement:
+        componentanDeActive(): boolean{
+            ....
+            return true/false
+
+        }
+    + app: import Module
+    + add canDeActive to router
+    {*}: true -> co the thoat ra
+         false -> ko the thoat ra
+
+
+
+
+
+
+
+
+
