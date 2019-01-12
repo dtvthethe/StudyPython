@@ -1,0 +1,27 @@
+Modules: https://docs.opencv.org/master/modules.html
+
+- get height, width:
+    width: img.shape[0]
+    height: img.shape[1]
+- get img type 8,16,32 bit...:
+    img.dtype
+- get size:
+    img.size
+- cut image:
+    img_cut = img[x1:y1, x2:y2]
+
+- Create color:
+	img = np.uint8[[[b,g,r]]]
+	img_hsv = cv2.cvtColor(img, cv2.COLOR_BRG2HSV) 
+- Cut color from image:
+	0> Read image:
+		img = imread(...)
+	1> Convert image to HSV
+		img_hsv = cv2.cvtColor(img, cv2.COLOR_BRG2HSV) 
+	2> create min max color:
+		min_color = np.array([hsv value  color])
+		max_color = np.array([hsv value color ])
+	3> create mask
+		mask  = cv2.inRange(img_hsv step1, min_color, max_color) => return array color => image
+	4> calculate "and" | "or" on img:
+		img_final = cv2.bitwise_and(im step0, im step0, mask= mask) 

@@ -19,7 +19,7 @@ Local storage:
         .getItam('key')
         .removeItem('key')
 
-`noi dung ${[this.]code here}`: template string
+noi dung ${[this.]code here}`: template string
 Call an property in Object type: objectName['propertyName']
 =============
 Binding: 

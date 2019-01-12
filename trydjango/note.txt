@@ -84,7 +84,7 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 - show error page:
     raise Http404('error content')
 
-- template & inerit:
+- template & inherit:
     1> base.html:
         {% block <blockname> %}
         {% endblock %}
