@@ -12,9 +12,9 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 
 -Add app: python manage.py startapp <app name>
 
-- 1> make migration: python manage.py makemigrations <app name> -> don't need input appname
+- 1> make migration: python manage.py makemigrations <app name> -> don't need input appname if second times
 
-- 2> T-SQL: python manage.py sqlmigrate polls 0001
+- 2> T-SQL: python manage.py sqlmigrate polls 0001 -> maybe don't need this step
 - 2> migration: python manage.py migrate
 
 -create super user: python manage.py createsuperuser
