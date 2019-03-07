@@ -17,6 +17,15 @@ python manage.py runserver your_ip:port -> add your_ip to ALLOWED_HOSTS
 - 2> T-SQL: python manage.py sqlmigrate polls 0001 -> maybe don't need this step
 - 2> migration: python manage.py migrate
 
+- create init data:
+    1> define in setting:
+        FIXTURE_DIRS = (
+           '/path/to/myapp/fixtures/',
+        )
+    2> create .json path file init data:
+        python3 manage.py dumpdata --format=json <app_name> > /path/to/myapp/fixtures/initial_data.json
+    3>  python3 manage.py loaddata name_file.json
+    
 -create super user: python manage.py createsuperuser
     dtvthe
     123
