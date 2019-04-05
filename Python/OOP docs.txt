@@ -3,10 +3,12 @@
 	map(func, seq) -> return iterator
 	filter(func, seq) -> return iterator
 
-_ Đa hình:
+_ Đa hình: trong từng trường hợp, hoàn cảnh khác nhau thì đối tượng có hình thái khác nhau tùy thuộc vào từng ngữ cảnh 
 	xe: 5 km/h
 	xe Ford: tốc độ 25 km/h
 	xe Audi: tốc  độ 50 km/h
+	học sinh: làm bài tập, nhghe giảng,
+	khách hàng: mua hàng, trả tiền
 	
 - Đóng gói:
 	private : __
@@ -31,8 +33,34 @@ _ Class: có 2 loại biến:
 		__len__() -> phải tự định nghĩa, ko phải len của class mà len do tự định nghiã
 		__add__()
 		__sub__()
-		
-- Del: để xóa 1 đối tượng
+
+* Trừu tượng:
+	from abc import ABC, abstractmethod
+	class phải kế thừa từ ABC để có abstractmethod
+	@abstractmethod => @ là phạm vi
+	EX:
+		class A(ABC):
+			@abstractmethod
+			def max(self):
+				pass
+
+		class B(A):
+		    def max(self):
+		        return 2 * 3
+
+
+- Khởi tạo: car = Car([pars]) -> ko ca từ khoá "new"
+- Thêm thuộc tính vào 1 đối tượng, ex: car.speed = 10 -> ttự add thêm "speed" vào class
+		class Car:
+		    def __init__(self):
+		        self.name = 'Audi'
+		        self.color = 'white'
+
+		car = Car()
+		car.speed = 500
+		print(car.__dict__)		
+
+- del: để xóa 1 đối tượng, ex: del car
 
 * Biến class:		
 	Nguoi.ten += 1: => truy cập bằng tên class
@@ -56,10 +84,6 @@ _ Class: có 2 loại biến:
 	class B(A):
 		_leg():
 			
-* Trừu tượng:
-	from abc import ABC, abstractmethod
-	class phải kế thừa từ ABC để có abstractmethod
-	@abstractmethod => @ là phạm vi
 	
 		
 * Thể hiện 1 đối tượng bằng 1 dâu "_"
