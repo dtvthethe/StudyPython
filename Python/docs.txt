@@ -20,6 +20,8 @@
 	yield 
 	^
 	@: khai bao pham vi
+* regule expression:
+	+ dấu "?" : tránh tham làm vd: <td>abc</td> : => "<td>.*?</td>" => do dấu "." là đại diện cho tất cả các kí tự nó sẽ lấy luôn cả "</td>" nên vì vậy nếu muốn dừng tại </td> thì dùng dấu "?" để tránh tham giam
 
 * khai bao:
 	a, b, c = 1, 2, 3 -> khai bao 1 dong
